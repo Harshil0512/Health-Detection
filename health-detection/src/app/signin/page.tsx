@@ -56,12 +56,14 @@ const router = useRouter();
           <CardTitle className="text-2xl">Login</CardTitle>
           <CardDescription>
             Enter your email below to login to your account
-
-            For Testing Purpose Use Default Credentials
             <br />
-            Email: health@wise.com
+            
+            Note : Use Test Credentials to login
             <br />
-            Password: health@123
+            <br />
+            <b>Email: health@wise.com</b>
+            <br />
+            <b>Password: health@123</b>
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -74,6 +76,7 @@ const router = useRouter();
                   type="username"
                   name="username"
                   placeholder="m@example.com"
+                  value="health@wise.com"
                   required
                 />
               </div>
@@ -84,13 +87,13 @@ const router = useRouter();
                     Forgot your password?
                   </Link>
                 </div>
-                <Input id="password" type="password" name="password" required />
+                <Input id="password" type="password" name="password" required value="health@123"/>
               </div>
               <Button className="w-full">Login</Button>
 
-              <Button variant="outline" className="w-full">
+              {/* <Button variant="outline" className="w-full">
                 Login with Google
-              </Button>
+              </Button> */}
             </div>
           </form>
           <div className="mt-4 text-center text-sm">
