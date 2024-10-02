@@ -56,6 +56,12 @@ const router = useRouter();
           <CardTitle className="text-2xl">Login</CardTitle>
           <CardDescription>
             Enter your email below to login to your account
+
+            For Testing Purpose Use Default Credentials
+            <br />
+            Email: health@wise.com
+            <br />
+            Password: health@123
           </CardDescription>
         </CardHeader>
         <CardContent>
